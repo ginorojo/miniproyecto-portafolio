@@ -6,14 +6,23 @@
     <title>Miniproyecto Portafolio</title>
     <link href="./output.css" rel="stylesheet">
   </head>
-  <body class="h-[900px] w-full text-white bg-gradient-to-b from-[#0a0f22] to-[#28498d]">
+  <body class="md:h-[825px] h-[780px] w-[800px] md:w-full text-white bg-gradient-to-b from-[#0a0f22] to-[#28498d]">
 
 <!-- /*encabezado y barra de navegacion*/ -->
-
-    <header class="flex flex-row justify-between items-center pt-5 px-15">
+    <div class="flex justify-end items-center w-[800px] h-[40px] md:hidden p-[5px] fixed">
+      <div>
+        <svg width="50" height="50" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="361" height="361" fill=""/>
+          <line x1="102" y1="129" x2="258" y2="129" stroke="yellow" stroke-width="10" stroke-linecap="round"/>
+          <line x1="102" y1="175" x2="258" y2="175" stroke="yellow" stroke-width="10" stroke-linecap="round"/>
+          <line x1="102" y1="221" x2="258" y2="221" stroke="yellow" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+      </div>  
+    </div>
+    <header class="hidden md:block  flex-row justify-between items-center pt-5 px-15 md:flex   ">
       <div class="w-6">
         <img
-          src="./react-brands.svg"
+          src="./images/react-brands.svg"
           alt=""
           style="background-color: aliceblue"
         />
@@ -28,81 +37,86 @@
       <div
         class="flex gap-1 border rounded-full border-[#E3FF6A] w-34 justify-center h-8 items-center"
       >
-        <a class="hover:text-[#E3FF6A]" href="#">CONTACTO</a>
-        <img class="w-5" src="./right-top-arrow-circle-regular-24.png" alt="" />
+        <a class="hover:text-[#E3FF6A]" href="#">CONTACT</a>
+        <img class="w-5" src="./images/right-top-arrow-circle-regular-24.png" alt="" />
       </div>
     </header>
 
 <!-- */background y hero imagen*/ -->
 
-     <div >
+     <div class="w-[100%]">
       <div class="pt-15 flex flex-col items-center">
-        <h1 class="text-[30px] font-semibold">
-          Soy <span class="text-[#E3FF6A] italic">Gino Rojo</span>
+        <h1 class="text-[40px] font-semibold">
+          I'am <span class="text-[#E3FF6A] italic">Gino Rojo</span>
         </h1>
-        <span class="text-[32px] font-semibold">Desarrollador Frontend</span>
+        <span class="text-[42px] font-semibold">Frontend Developer</span>
       </div>
-
-      <section class="flex justify-between h-[380px] ">
-        <div class="gap-2 w-45 h-30 text-[8px] bg-[#0a0f22c4] rounded-xl flex flex-col justify-center items-center -rotate-6 ml-1.5">
+      <section class="flex justify-between h-[570px] pt-[10px] md:w-[100%] ">
+        <div class="gap-2 w-70 h-40 text-[8px] bg-[#0d1d36] rounded-xl flex flex-col justify-center items-center -rotate-6 ml-1.5">
           <span class="text-[13px] font-semibold"
-            >Reseña cliente de Australia</span>
+            >Australian Customer Review</span>
           <span class="flex w-3 justify-center">
-            <img src="./star-solid-24.png" alt="" />
-            <img src="./star-solid-24.png" alt="" />
-            <img src="./star-solid-24.png" alt="" />
-            <img src="./star-solid-24.png" alt="" />
-            <img src="./star-solid-24.png" alt="" />
+            <img src="./images/star-solid-24.png" alt="" />
+            <img src="./images/star-solid-24.png" alt="" />
+            <img src="./images/star-solid-24.png" alt="" />
+            <img src="./images/star-solid-24.png" alt="" />
+            <img src="./images/star-solid-24.png" alt="" />
+            
           </span>
-          <span class="w-[80%]"
-            >Tuve la oportunidad de trabajar con Gino en el desarrollo del
-            frontend de mi sitio web, y honestamente superó todas mis
-            expectativas.
+          <span class="w-[80%] text-[10px]"
+            >
+            I had the opportunity to work with Gino on the front-end development 
+            of my website, and he honestly exceeded all my expectations
           </span>
         </div>
 
-        <div class="w-[25%]">
-          <img src="./profile.png" alt="" />
+        <div class="w-[360px]">
+          <img class="drop-shadow-[-5px_-90px_70px_rgba(195,219,103)] h-[565px]" src="./images/profile.png" alt="" />
         </div>
 
-        <div class=" gap-2 w-45 h-30 text-[8px] bg-[#0a0f22c4] rounded-xl flex flex-col justify-center items-center rotate-6 mr-1.5">
-          <span class="text-[13px] font-semibold"
-            >Reseña cliente de Australia</span>
-            <img src="./card.png" alt="">
+        <div class=" mr-8 rotate-6">
+          <img class="rounded-xl w-[260px]  h-[160px]" src="./images/fotoderecha.png" alt="">
         </div>
+
+      
      </div>
     </section>
 <!-- /*seccion acerca de mi*/ -->
 
     <main class="bg-[#0a0f22] m-auto">
-      <section class=" w-full flex flex-col items-center gap-6" >
-        <h2 class="text-[#E3FF6A] text-[30px] flex justify-center pt-20">
-          ACERCA DE MI
-        </h2>
-        <div class="w-[50%] flex flex-col justify-center items-center">
-            <p class="">
-                Soy Gino Rojo Jorquera, desarrollador frontend con conocimientos en  
-            </p>
-            <p>HTML, CSS, JavaScript, Python y MySQL.
+      <section class="flex flex-col-reverse md:flex md:flex-row justify-center gap-[10px] p-[20px] md:w-[100%] md:gap-[80px]">
 
-            </p>
-            <br>
-            <p>
-                Mi trabajo se basa en escribir código limpio, ordenado y eficiente,
-            </p>
-
-            <p>aplicando buenas prácticas de desarrollo.</p>
-            <br>
-            <p>
-                Estoy en constante aprendizaje y actualización para incorporar nuevas
-                
-            </p>
-            <p>herramientas y tecnologías del entorno web.</p>
-        </div> 
-        <div class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-35 h-8 flex items-center justify-center ">
-            <a class="text-black font-semibold" href="">Mis Proyectos</a>
+        <div class= "pt-[100px] w-[100%]  md:w-[200px] md:h-600px flex md:flex-col justify-center gap-[20px] items-center md:justify-between" >
+          <img class="w-[250px] h-[300px]  md:w-[100px] md:h-[120px] md:-rotate-15 rounded-xl md:drop-shadow-[-50px_-50px_40px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt="">
+          <img class="w-[250px] h-[300px] md:w-[160px] md:h-[200px] md:rotate-12 rounded-xl md:drop-shadow-[100px_80px_60px_rgba(211,213,211)]" src="./images/personas-trabajando2.jpg" alt="">
         </div>
-       
+
+        <div class="flex flex-col justify-start items-center ">
+          <br>
+          <br>
+          <h2 class="text-[#E3FF6A] text-[80px]  md:text-[60px] flex justify-center pt-20">Who I am?</h2>
+          <br>
+          <div class="text-[25px] text-center md:text-[17px]">
+            <p>I'm Gino Rojo Jorquera, a front-end developer with expertise in</p>
+            <p>HTML, CSS, JavaScript, Python, and MySQL.</p>
+            <br>
+            <p>My work involves writing clean, organized, and efficient code,</p>
+            <p>applying good development practices.</p>
+            <br>
+            <p>I'm constantly learning and updating to incorporate new</p>
+            <p>web tools and technologies.</p> 
+          </div>
+          <br>
+          <div class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-[250px] h-8 flex items-center justify-center ">
+            <a class="text-black font-semibold" href="">SHOW MY PROYECTS</a>
+          </div>
+        </div>
+
+        <div class="hidden md:block  w-[100px] md:w-[200px] md:h-[600px]  flex-col justify-center items-end md:items-center md:justify-center md:flex" >
+          <img class="w-[100px] h-[150px] md:w-[160px] md:h-[200px] md:-rotate-12 rounded-xl  md:drop-shadow-[-50px_-80px_70px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt="">
+        </div>
+
+        
       </section>
 
       <br>
@@ -110,44 +124,44 @@
       <br>
 
 <!-- /* mis habilidades */ -->
-      <div class="flex justify-center text">
+      <div class="flex justify-center text ">
         <h2 class="text-[#E3FF6A] text-[30px]">MY SKILLS</h2>
       </div>
       <br>
 
-      <section class="bg-[#0a0f22] flex justify-center gap-4 px-5">
-        <div class="flex flex-wrap justify-center  w-[580px] gap-0.5 h-[320px] ">
-            <div class="rounded-lg  bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600 ">
-                <img src="./images/html5-logo-24.png" alt="">
+      <section class="bg-[#0a0f22] flex flex-col justify-center items-center gap-4 px-5 m-auto xl:gap-[5px] xl:flex xl:flex-row xl:justify-center xl:items-center xl:h-[500px] xl:pr-[60px]">
+        <div class="flex flex-wrap justify-center xl:w-[900px]  w-[580px] gap-0.5 h-[320px] xl:h-[400px]">
+            <div class="rounded-lg  bg-[#1d2236] xl:w-[200px] xl:h-[190px] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600 ">
+                <img img class=" w-[40%]" src="./images/html5-logo-24.png" alt="">
             </div>
-            <div class=" rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600">
-                <img src="./images/css3-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600">
+                <img class="w-[40%]" src="./images/css3-logo-24.png" alt="">
             </div>
-            <div class="rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600">
-                <img src="./images/file-js-solid-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600">
+                <img class="w-[40%]" src="./images/file-js-solid-24.png" alt="">
             </div>
-            <div class="inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
-                <img src="./images/react-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
+                <img class="w-[40%]" src="./images/react-logo-24.png" alt="">
             </div>
-            <div class="inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
-                <img src="./images/python-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
+                <img class="w-[40%]" src="./images/python-logo-24.png" alt="">
             </div>
-            <div class="inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
-                <img src="./images/nodejs-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
+                <img class="w-[40%]" src="./images/nodejs-logo-24.png" alt="">
             </div>
-            <div class="inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center ">
-                <img src="./images/tailwind-css-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center ">
+                <img class="w-[40%]" src="./images/tailwind-css-logo-24.png" alt="">
             </div>
-            <div class="inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
-                <img src="./images/vuejs-logo-24.png" alt="">
+            <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
+                <img class="w-[40%]" src="./images/vuejs-logo-24.png" alt="">
             </div>
 
         </div>
 
-        <div class="rounded-md w-[299px] bg-[#1d2236] flex flex-col justify-center items-center h-[312px] gap-7 ">
+        <div class="rounded-md xl:w-[460px] w-[299px] xl:h-[390px] bg-[#1d2236] flex flex-col justify-center items-center h-[312px] gap-7 ">
           <h3 class="text-[35px] font-bold">1</h3>
-          <span class="text-[25px] font-semibold">Año de experiencia</span>
-          <span class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-35 h-8 flex items-center justify-center text-black font-semibold cursor-pointer">Descarga mi CV </span>
+          <span class="text-[30px] font-semibold text-center">YEAR EXPERIENCE WORKING</span>
+          <span class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-[200px] h-8 flex items-center justify-center text-black font-semibold cursor-pointer">DOWNLOAD MY CV </span>
 
         </div>
         
@@ -159,29 +173,29 @@
 
     <section class="  w-[88%] mx-auto flex flex-col justify-center " >
       <div class="inset-shadow-sm inset-shadow-gray-600 bg-[#1d2236] rounded-lg">
-        <div class="rounded-t-lg p-10 flex items-center justify-center text-[20px] text-[#E3FF6A] font-semibold">
-          <h3>OTRAS TECNOLOGIAS</h3>
+        <div class="rounded-t-lg p-10 flex items-center justify-center text-[40px] md:text-[20px] text-[#E3FF6A] font-semibold">
+          <h3>ADDITIONAL SKILLS</h3>
         </div>
   
         <div class=" pb-10 flex justify-center items-center bg-[#1d2236] gap-12">
   
             <div class="inset-shadow-xs w-[50px] h-[50px] flex justify-center items-center">
-              <img src="./images/html5-logo-24.png" alt="">
+              <img class="w-[100%]" src="./images/html5-logo-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./images/css3-logo-24.png" alt="">
+                <img class="w-[100%]"  src="./images/css3-logo-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./images/file-js-solid-24.png" alt="">
+                <img class="w-[100%]"  src="./images/file-js-solid-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./images/react-logo-24.png" alt="">
+                <img class="w-[100%]"  src="./images/react-logo-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./images/python-logo-24.png" alt="">
+                <img class="w-[100%]"  src="./images/python-logo-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./images/nodejs-logo-24.png" alt="">
+                <img class="w-[100%]"  src="./images/nodejs-logo-24.png" alt="">
             </div>
               
           
@@ -195,34 +209,55 @@
 
     </section>
 
-    <section class="flex justify-center items-center gap-5">
+    <section class="flex flex-col justify-center items-center gap-5 md:flex md:flex-row">
 
       <div class="w-[50%] h-[300px] flex flex-col items-center justify-center ">
-        <span class="text-[30px] font-semibold ">PASION POR MI TRABAJO</span>
+        <span class="text-[50px] font-semibold text-center md:text-[40px] md:text-center ">THE WORK CLOSEST TO MY HEART</span>
       </div>
 
-      <div class="w-[40%] h-[300px] relative">
+      <div class="w-[80%] md:w-[40%] md:h-[300px] relative">
         <div class="flex gap-2">
-          <a class="w-[40%] h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/" target="_blank" >
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./chamber.png" alt="" >
+          <a class="w-[80%] h-[400px] md:w-[40%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/" target="_blank" >
+            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/chamber.png" alt="" >
           </a>
-          <a class="w-[25%] h-[300px]" href="https://ginorojo.github.io/wdd131/project/index.html" target="_blank">
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./hungry.png" alt="">
+          <a class="w-[60%] h-[400px] md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd131/project/index.html" target="_blank">
+            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/hungry.png" alt="">
           </a>
-          <a class="w-[25%] h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/join.html" target="_blank">
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./form.png" alt="">
-          </a>
-
-        
-          
-          
-          <span class="hover:bg-[#e6f79d]  bg-[#E3FF6A] w-[250px] text-black font-semibold h-[30px] flex items-center justify-center rounded-full absolute top-[90%] right-[95%]">
-            <a href="">Ver mis proyectos</a>
+          <a class="w-[60%] h-[400px]  md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/join.html" target="_blank">
+            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/form.png" alt="">
+          </a>        
+          <span class="hover:bg-[#e6f79d]  bg-[#E3FF6A] w-[250px] text-black font-semibold h-[30px] flex items-center justify-center rounded-full md:absolute md:top-[90%] md:right-[95%] absolute top-[110%] right-[30%]">
+            <a href="">SHOW MY PROJECTS</a>
           </span>
 
         </div>
+        
 
     </section>
+    <br>
+      <br>
+        <br>
+    <section class="flex justify-center items-center pt-[100px] ">
+      <form class=" gap-12 w-[87%] h-[400px] rounded-lg bg-white text-black flex flex-col justify-center items-center action="" method="post">
+        <h3 class="text-[30px] font-semibold">LET'S HAVE A CHAT</h3>
+        <ul class="flex flex-col gap-2 justify-center items-center">
+          <li class="rounded-lg w-[650px]  md:w-[800px] h-[40px] flex items-center bg-[#e3e3e3]">
+            <input class="ml-5 border-none outline-none w-[100%]" type="text" id="Name" name="user_name" placeholder="Name:">
+          </li>
+          <li class="rounded-lg w-[650px] md:w-[800px] h-[40px] flex items-center bg-[#e3e3e3]">
+            <input class="ml-5 outline-none  w-[100%] border-none"  type="mail" id="mail" name="user mail" placeholder="Email" >
+          </li>
+          <li class="rounded-lg w-[650px] md:w-[800px] h-[100px] flex items-center bg-[#e3e3e3]" >
+            <textarea class="outline-none ml-5  w-[100%] resize-none" name="user_menssage" id="msg" value="Chat here" placeholder="Chat here"></textarea>
+          </li>
+          <li class=" rounded-full hover:bg-[#e6f79d]  bg-[#E3FF6A] w-[250px] text-black font-semibold h-[30px] flex items-center justify-center">
+            <button class="cursor-pointer type="submit">SUBMIT HERE</button>
+          </li>
+        </ul>
+        
+      </form>
+    </section>
+  
 
     <br>
     <br>
@@ -230,3 +265,5 @@
   </main>
  </body>
 </html>
+
+<!-- npx @tailwindcss/cli -i ./input.css -o ./output.css --watch -->
