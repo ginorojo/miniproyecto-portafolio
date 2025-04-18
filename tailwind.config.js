@@ -2,6 +2,7 @@ module.exports = {
     theme: {
       extend: {
         colors: {
+          darkMode: "class",
           dark: "#0D1117",
           light: "#FFFFFF",
           highlight: "#E3FF6A",
