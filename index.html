@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miniproyecto Portafolio</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">  
+    <script src="./dark.js"  defer></script>
+    <!-- bg-gradient-to-b from-[#0a0f22] to-[#28498d] -->
   </head>
-  <body class="md:h-[825px] h-[780px] w-[800px] md:w-full text-white bg-gradient-to-b from-[#0a0f22] to-[#28498d]">
+  <body class="bg-gradient-to-b from-[#213aa9] to-[#82a9f8] dark:from-[#0a0f22] dark:to-[#28498d] md:h-[825px] h-[805px] w-[800px] md:w-full text-white ">
 
 <!-- /*encabezado y barra de navegacion*/ -->
     <div class="flex justify-end items-center w-[800px] h-[40px] md:hidden p-[5px] fixed">
@@ -19,26 +21,32 @@
           </svg>
       </div>  
     </div>
-    <header class="hidden md:block  flex-row justify-between items-center pt-5 px-15 md:flex   ">
-      <div class="w-6">
+    <header class=" flex-row justify-between items-center pt-5 px-15 md:flex font-semibold" >
+      <div class="w-6 hidden md:block ">
         <img
           src="./images/react-brands.svg"
           alt=""
           style="background-color: aliceblue"
         />
       </div>
-      <nav class="flex flex-row">
+      <nav class="flex flex-row hidden md:block ">
         <ul class="flex gap-20 text-[12px] border-none">
           <li><a class="hover:text-[#E3FF6A]" href="#">INICIO</a></li>
           <li><a class="hover:text-[#E3FF6A]" href="#">HABILIDADES</a></li>
           <li><a class="hover:text-[#E3FF6A]" href="#">PROYECTOS</a></li>
         </ul>
       </nav>
-      <div
-        class="flex gap-1 border rounded-full border-[#E3FF6A] w-34 justify-center h-8 items-center"
-      >
-        <a class="hover:text-[#E3FF6A]" href="#">CONTACT</a>
-        <img class="w-5" src="./images/right-top-arrow-circle-regular-24.png" alt="" />
+
+      <button class="cursor-pointer absolute md:relative" id="dark">
+        <img class="hidden dark:block" src="./images/sun.png" alt="">
+        <img  class="block dark:hidden" src="./images/🌝.png" alt="">
+      </button>
+
+      <div class="hidden md:block">
+        <div class="flex gap-1 border rounded-full border-[#E3FF6A] w-[200px] justify-center h-8 items-center">
+          <a class="hover:text-[#E3FF6A]" href="#">CONTACT</a>
+          <img class="w-5" src="./images/right-top-arrow-circle-regular-24.png" alt="" />
+        </div>
       </div>
     </header>
 
@@ -71,7 +79,7 @@
         </div>
 
         <div class="w-[360px]">
-          <img class="drop-shadow-[-5px_-90px_70px_rgba(195,219,103)] h-[565px]" src="./images/profile.png" alt="" />
+          <img class="pb-1 drop-shadow-[-5px_-90px_70px_rgba(195,219,103)] h-[565px]" src="./images/profile.png" alt="" />
         </div>
 
         <div class=" mr-8 rotate-6">
@@ -83,7 +91,7 @@
     </section>
 <!-- /*seccion acerca de mi*/ -->
 
-    <main class="bg-[#0a0f22] m-auto">
+    <main class="bg-[#dcdcdd] dark:bg-[#0a0f22] m-auto ">
       <section class="flex flex-col-reverse md:flex md:flex-row justify-center gap-[10px] p-[20px] md:w-[100%] md:gap-[80px]">
 
         <div class= "pt-[100px] w-[100%]  md:w-[200px] md:h-600px flex md:flex-col justify-center gap-[20px] items-center md:justify-between" >
@@ -94,9 +102,9 @@
         <div class="flex flex-col justify-start items-center ">
           <br>
           <br>
-          <h2 class="text-[#E3FF6A] text-[80px]  md:text-[60px] flex justify-center pt-20">Who I am?</h2>
+          <h2 class="text-[#1d2236] font-semibold  dark:text-[#E3FF6A] text-[80px]  md:text-[60px] flex justify-center pt-20">Who I am?</h2>
           <br>
-          <div class="text-[25px] text-center md:text-[17px]">
+          <div class="text-[25px] text-center md:text-[17px] dark:text-white text-black font-semibold">
             <p>I'm Gino Rojo Jorquera, a front-end developer with expertise in</p>
             <p>HTML, CSS, JavaScript, Python, and MySQL.</p>
             <br>
@@ -107,8 +115,8 @@
             <p>web tools and technologies.</p> 
           </div>
           <br>
-          <div class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-[250px] h-8 flex items-center justify-center ">
-            <a class="text-black font-semibold" href="">SHOW MY PROYECTS</a>
+          <div class="hover:bg-[#E3FF6A] dark:bg-[#E3FF6A] dark:hover:bg-[#e0eca8] rounded-2xl w-[250px] h-8 flex items-center justify-center bg-[#1d2236] ">
+            <a class="hover:text-black text-white dark:text-black font-semibold " href="">SHOW MY PROYECTS</a>
           </div>
         </div>
 
@@ -125,11 +133,11 @@
 
 <!-- /* mis habilidades */ -->
       <div class="flex justify-center text ">
-        <h2 class="text-[#E3FF6A] text-[30px]">MY SKILLS</h2>
+        <h2 class="dark:text-[#E3FF6A] text-[30px] text-[#0a0f22] font-bold" >MY SKILLS</h2>
       </div>
       <br>
 
-      <section class="bg-[#0a0f22] flex flex-col justify-center items-center gap-4 px-5 m-auto xl:gap-[5px] xl:flex xl:flex-row xl:justify-center xl:items-center xl:h-[500px] xl:pr-[60px] md:w-[100%]">
+      <section class="bg-[#dcdcdd] dark:bg-[#0a0f22] flex flex-col justify-center items-center gap-4 px-5 m-auto xl:gap-[5px] xl:flex xl:flex-row xl:justify-center xl:items-center xl:h-[500px] xl:pr-[60px] md:w-[100%]">
         <div class="flex flex-wrap justify-center xl:w-[900px]  w-[580px] gap-0.5 h-[320px] xl:h-[400px]">
             <div class="rounded-lg  bg-[#1d2236] xl:w-[200px] xl:h-[190px] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600 ">
                 <img img class=" w-[40%]" src="./images/html5-logo-24.png" alt="">
@@ -162,7 +170,6 @@
           <h3 class="text-[35px] font-bold">1</h3>
           <span class="text-[30px] font-semibold text-center">YEAR EXPERIENCE WORKING</span>
           <span class="bg-[#E3FF6A] hover:bg-[#e0eca8] rounded-2xl w-[200px] h-8 flex items-center justify-center text-black font-semibold cursor-pointer">DOWNLOAD MY CV </span>
-
         </div>
         
       </section>
@@ -173,7 +180,7 @@
 
     <section class="  w-[88%] mx-auto flex flex-col justify-center " >
       <div class="inset-shadow-sm inset-shadow-gray-600 bg-[#1d2236] rounded-lg">
-        <div class="rounded-t-lg p-10 flex items-center justify-center text-[40px] md:text-[20px] text-[#E3FF6A] font-semibold">
+        <div class="rounded-t-lg p-10 flex items-center justify-center text-[40px] md:text-[20px] dark:text-[#E3FF6A] font-bold">
           <h3>ADDITIONAL SKILLS</h3>
         </div>
   
@@ -211,8 +218,8 @@
 
     <section class="flex flex-col justify-center items-center gap-5 md:flex md:flex-row">
 
-      <div class="w-[50%] h-[300px] flex flex-col items-center justify-center ">
-        <span class="text-[50px] font-semibold text-center md:text-[40px] md:text-center ">THE WORK CLOSEST TO MY HEART</span>
+      <div class="w-[40%] h-[300px] flex flex-col items-center justify-center ">
+        <span class="text-[50px] font-bold text-center md:text-[40px] md:text-center text-[#0a0f22] dark:text-white dark:text-center">THE WORK CLOSEST TO MY HEART</span>
       </div>
 
       <div class="w-[80%] md:w-[40%] md:h-[300px] relative">
@@ -226,7 +233,7 @@
           <a class="w-[60%] h-[400px]  md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/join.html" target="_blank">
             <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/form.png" alt="">
           </a>        
-          <span class="hover:bg-[#e6f79d]  bg-[#E3FF6A] w-[250px] text-black font-semibold h-[30px] flex items-center justify-center rounded-full md:absolute md:top-[90%] md:right-[95%] absolute top-[110%] right-[30%]">
+          <span class="bg-[#0a0f22] hover:bg-[#e6f79d] dark:bg-[#E3FF6A] w-[300px] dark:text-black font-semibold h-[30px] flex items-center justify-center rounded-full md:absolute md:top-[90%] md:right-[95%] absolute top-[110%] right-[30%]">
             <a href="">SHOW MY PROJECTS</a>
           </span>
 
@@ -239,7 +246,7 @@
         <br>
     <section class="flex justify-center items-center pt-[100px] ">
       <form class=" gap-12 w-[87%] h-[400px] rounded-lg bg-white text-black flex flex-col justify-center items-center action="" method="post">
-        <h3 class="text-[30px] font-semibold">LET'S HAVE A CHAT</h3>
+        <h3 class="text-[30px] font-bold">LET'S HAVE A CHAT</h3>
         <ul class="flex flex-col gap-2 justify-center items-center">
           <li class="rounded-lg w-[650px]  lg:w-[850px] h-[40px] flex items-center bg-[#e3e3e3]">
             <input class="ml-5 border-none outline-none w-[100%]" type="text" id="Name" name="user_name" placeholder="Name:">
@@ -250,7 +257,7 @@
           <li class="rounded-lg w-[650px] lg:w-[850px] h-[100px] flex items-center bg-[#e3e3e3]" >
             <textarea class="outline-none ml-5  w-[100%] resize-none" name="user_menssage" id="msg" value="Chat here" placeholder="Chat here"></textarea>
           </li>
-          <li class=" rounded-full hover:bg-[#e6f79d]  bg-[#E3FF6A] w-[250px] text-black font-semibold h-[30px] flex items-center justify-center">
+          <li class="bg-[#0a0f22] rounded-full hover:bg-[#e6f79d] dark:bg-[#E3FF6A] w-[250px] dark:text-black font-semibold h-[30px] flex items-center justify-center text-white hover:text-black">
             <button class="cursor-pointer type="submit">SUBMIT HERE</button>
           </li>
         </ul>
