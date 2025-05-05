@@ -11,7 +11,7 @@
   <body class="bg-gradient-to-b from-[#213aa9] to-[#82a9f8] dark:from-[#0a0f22] dark:to-[#28498d] md:h-[825px] h-[805px] w-[800px] md:w-full text-white ">
 
 <!-- /*encabezado y barra de navegacion*/ -->
-    <div class="flex justify-end items-center w-[800px] h-[40px] md:hidden p-[5px] fixed">
+    <div class="flex justify-end items-center w-[800px] h-[40px] md:hidden p-[5px] absolute">
       <div>
         <svg width="50" height="50" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="361" height="361" fill=""/>
@@ -30,10 +30,10 @@
         />
       </div>
       <nav class="flex flex-row hidden md:block ">
-        <ul class="flex gap-20 text-[12px] border-none">
-          <li><a class="hover:text-[#E3FF6A]" href="#">INICIO</a></li>
-          <li><a class="hover:text-[#E3FF6A]" href="#">HABILIDADES</a></li>
-          <li><a class="hover:text-[#E3FF6A]" href="#">PROYECTOS</a></li>
+        <ul class="flex gap-20 text-[12px] border-none " id="navegacion">
+          <!-- <li><a class="hover:text-[#E3FF6A] navegacion" href="#">INICIO</a></li>
+          <li><a class="hover:text-[#E3FF6A] navegacion" href="#">HABILIDADES</a></li>
+          <li><a class="hover:text-[#E3FF6A] navegacion" href="#">PROYECTOS</a></li> -->
         </ul>
       </nav>
 
@@ -43,8 +43,8 @@
       </button>
 
       <div class="hidden md:block">
-        <div class="flex gap-1 border rounded-full border-[#E3FF6A] w-[200px] justify-center h-8 items-center">
-          <a class="hover:text-[#E3FF6A]" href="#">CONTACT</a>
+        <div class="flex gap-1 border rounded-full border-[#E3FF6A] w-[200px] justify-center h-8 items-center" id="contacto">
+          <!-- <a class="hover:text-[#E3FF6A]" href="#">CONTACT</a> -->
           <img class="w-5" src="./images/right-top-arrow-circle-regular-24.png" alt="" />
         </div>
       </div>
@@ -53,11 +53,11 @@
 <!-- */background y hero imagen*/ -->
 
      <div class="w-[100%]">
-      <div class="pt-15 flex flex-col items-center">
-        <h1 class="text-[40px] font-semibold">
+      <div class="pt-15 flex flex-col items-center " id="titulopri">
+        <!-- <h1 class="text-[40px] font-semibold">
           I'am <span class="text-[#E3FF6A] italic">Gino Rojo</span>
         </h1>
-        <span class="text-[42px] font-semibold">Frontend Developer</span>
+        <span class="text-[42px] font-semibold">Frontend Developer</span> -->
       </div>
       <section class="flex justify-between h-[570px] pt-[10px] md:w-[100%] ">
         <div class="gap-2 w-70 h-40 text-[8px] bg-[#0d1d36] rounded-xl flex flex-col justify-center items-center -rotate-6 ml-1.5">
@@ -92,11 +92,11 @@
 <!-- /*seccion acerca de mi*/ -->
 
     <main class="bg-[#dcdcdd] dark:bg-[#0a0f22] m-auto ">
-      <section class="flex flex-col-reverse md:flex md:flex-row justify-center gap-[10px] p-[20px] md:w-[100%] md:gap-[80px]">
+      <section class="flex flex-col-reverse md:flex md:flex-row justify-center gap-[10px] p-[20px] md:w-[100%] md:gap-[20px]">
 
-        <div class= "pt-[100px] w-[100%]  md:w-[200px] md:h-600px flex md:flex-col justify-center gap-[20px] items-center md:justify-between" >
-          <img class="w-[250px] h-[300px]  md:w-[100px] md:h-[120px] md:-rotate-15 rounded-xl md:drop-shadow-[-50px_-50px_40px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt="">
-          <img class="w-[250px] h-[300px] md:w-[160px] md:h-[200px] md:rotate-12 rounded-xl md:drop-shadow-[100px_80px_60px_rgba(211,213,211)]" src="./images/personas-trabajando2.jpg" alt="">
+        <div id="personasTrab" class= "pt-[100px] w-[100%]  md:w-[200px] md:h-600px flex md:flex-col justify-center gap-[20px] items-center md:justify-between" >
+          <!-- <img class="w-[250px] h-[300px]  md:w-[100px] md:h-[120px] md:-rotate-15 rounded-xl md:drop-shadow-[-50px_-50px_40px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt="">
+          <img class="w-[250px] h-[300px] md:w-[160px] md:h-[200px] md:rotate-12 rounded-xl md:drop-shadow-[100px_80px_60px_rgba(211,213,211)]" src="./images/personas-trabajando2.jpg" alt=""> -->
         </div>
 
         <div class="flex flex-col justify-start items-center ">
@@ -104,15 +104,15 @@
           <br>
           <h2 class="text-[#1d2236] font-semibold  dark:text-[#E3FF6A] text-[80px]  md:text-[60px] flex justify-center pt-20">Who I am?</h2>
           <br>
-          <div class="text-[25px] text-center md:text-[17px] dark:text-white text-black font-semibold">
-            <p>I'm Gino Rojo Jorquera, a front-end developer with expertise in</p>
+          <div class="text-[25px] text-center md:text-[17px] dark:text-white text-black font-semibold" id="habilidades">
+            <!-- <p>I'm Gino Rojo Jorquera, a front-end developer with expertise in</p>
             <p>HTML, CSS, JavaScript, Python, and MySQL.</p>
             <br>
             <p>My work involves writing clean, organized, and efficient code,</p>
             <p>applying good development practices.</p>
             <br>
             <p>I'm constantly learning and updating to incorporate new</p>
-            <p>web tools and technologies.</p> 
+            <p>web tools and technologies.</p>  -->
           </div>
           <br>
           <div class="hover:bg-[#E3FF6A] dark:bg-[#E3FF6A] dark:hover:bg-[#e0eca8] rounded-2xl w-[250px] h-8 flex items-center justify-center bg-[#1d2236] ">
@@ -120,8 +120,8 @@
           </div>
         </div>
 
-        <div class="hidden md:block  w-[100px] md:w-[200px] md:h-[600px]  flex-col justify-center items-end md:items-center md:justify-center md:flex" >
-          <img class="w-[100px] h-[150px] md:w-[160px] md:h-[200px] md:-rotate-12 rounded-xl  md:drop-shadow-[-50px_-80px_70px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt="">
+        <div id="personasTrab2" class="personasTrab hidden md:block  w-[50px] md:w-[200px] md:h-[600px]  flex-col justify-center items-end md:items-center md:justify-center " >
+          <!-- <img class="w-[100px] h-[150px] md:w-[160px] md:h-[200px] md:-rotate-12 rounded-xl  md:drop-shadow-[-50px_-80px_70px_rgba(211,213,211)]" src="./images/personas-trabajando.jpg" alt=""> -->
         </div>
 
         
@@ -138,8 +138,8 @@
       <br>
 
       <section class="bg-[#dcdcdd] dark:bg-[#0a0f22] flex flex-col justify-center items-center gap-4 px-5 m-auto xl:gap-[5px] xl:flex xl:flex-row xl:justify-center xl:items-center xl:h-[500px] xl:pr-[60px] md:w-[100%]">
-        <div class="flex flex-wrap justify-center xl:w-[900px]  w-[580px] gap-0.5 h-[320px] xl:h-[400px]">
-            <div class="rounded-lg  bg-[#1d2236] xl:w-[200px] xl:h-[190px] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600 ">
+        <div id="tecnics" class="flex flex-wrap justify-center xl:w-[900px]  w-[580px] gap-0.5 h-[320px] xl:h-[400px]">
+            <!-- <div class="rounded-lg  bg-[#1d2236] xl:w-[200px] xl:h-[190px] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600 ">
                 <img img class=" w-[40%]" src="./images/html5-logo-24.png" alt="">
             </div>
             <div class="xl:w-[200px] xl:h-[190px] rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center inset-shadow-sm inset-shadow-gray-600">
@@ -162,7 +162,7 @@
             </div>
             <div class="xl:w-[200px] xl:h-[190px] inset-shadow-sm inset-shadow-gray-600 rounded-lg bg-[#1d2236] w-[140px] h-[150px] flex justify-center items-center">
                 <img class="w-[40%]" src="./images/vuejs-logo-24.png" alt="">
-            </div>
+            </div> -->
 
         </div>
 
@@ -184,9 +184,9 @@
           <h3>ADDITIONAL SKILLS</h3>
         </div>
   
-        <div class=" pb-10 flex justify-center items-center bg-[#1d2236] gap-12">
+        <div id="otrasTecnics" class=" pb-10 flex justify-center items-center bg-[#1d2236] gap-12">
   
-            <div class="inset-shadow-xs w-[50px] h-[50px] flex justify-center items-center">
+            <!-- <div class="inset-shadow-xs w-[50px] h-[50px] flex justify-center items-center">
               <img class="w-[100%]" src="./images/html5-logo-24.png" alt="">
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
@@ -203,7 +203,7 @@
             </div>
             <div class=" w-[50px] h-[50px] flex justify-center items-center">
                 <img class="w-[100%]"  src="./images/nodejs-logo-24.png" alt="">
-            </div>
+            </div> -->
               
           
         </div>
@@ -216,29 +216,35 @@
 
     </section>
 
-    <section class="flex flex-col justify-center items-center gap-5 md:flex md:flex-row">
+    <section class="flex flex-col justify-center items-center gap-5 md:flex md:flex-row" >
 
-      <div class="w-[40%] h-[300px] flex flex-col items-center justify-center ">
-        <span class="text-[50px] font-bold text-center md:text-[40px] md:text-center text-[#0a0f22] dark:text-white dark:text-center">THE WORK CLOSEST TO MY HEART</span>
+      <div class="w-[40%] h-[300px] flex flex-col items-center justify-center " id="repotit">
+        <!-- <span class=" text-[50px] font-bold text-center md:text-[40px] md:text-center text-[#0a0f22] dark:text-white dark:text-center">THE WORK CLOSEST TO MY HEART</span> -->
       </div>
 
       <div class="w-[80%] md:w-[40%] md:h-[300px] relative">
-        <div class="flex gap-2">
-          <a class="w-[80%] h-[400px] md:w-[40%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/" target="_blank" >
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/chamber.png" alt="" >
-          </a>
-          <a class="w-[60%] h-[400px] md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd131/project/index.html" target="_blank">
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/hungry.png" alt="">
-          </a>
-          <a class="w-[60%] h-[400px]  md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/join.html" target="_blank">
-            <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/form.png" alt="">
-          </a>        
-          <span class="bg-[#0a0f22] hover:bg-[#e6f79d] dark:bg-[#E3FF6A] w-[300px] dark:text-black font-semibold h-[30px] flex items-center justify-center rounded-full md:absolute md:top-[90%] md:right-[95%] absolute top-[110%] right-[30%]">
-            <a href="">SHOW MY PROJECTS</a>
-          </span>
+        <div class="flex gap-2" >
+          <div id="repo" class="flex gap-2">
+            <!-- <a class="w-[80%] h-[400px] md:w-[40%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/" target="_blank" >
+              <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/chamber.png" alt="" >
+            </a>
+            <a class="w-[60%] h-[400px] md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd131/project/index.html" target="_blank">
+              <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/hungry.png" alt="">
+            </a>
+            <a class="w-[60%] h-[400px]  md:w-[25%] md:h-[300px]" href="https://ginorojo.github.io/wdd231/chamber/join.html" target="_blank">
+              <img class="border-2 rounded-xl w-[100%] h-[100%]" src="./images/form.png" alt="">
+            </a>         -->
+          </div>
+          <div id="btnRepo" >
+            <!-- <button   class="bg-[#0a0f22] hover:bg-[#e6f79d] dark:bg-[#E3FF6A] w-[300px] dark:text-black font-semibold h-[30px] flex items-center justify-center rounded-full md:absolute md:top-[90%] md:right-[95%] absolute top-[110%] right-[30%]">
+              <a href="">SHOW MY PROJECTS</a>
+            </button> -->
+          </div>
+        
+          
 
         </div>
-        
+      </div>  
 
     </section>
     <br>
